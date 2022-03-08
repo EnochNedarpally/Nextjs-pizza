@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    padding:1rem;
+    max-height: 100vh;
+}
+
+.left,.right{
+    flex:1;
+}
+.table{
+    width:100%;
+    text-align: left;
+    border-spacing: 1.2rem;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 10px;
+}
+.button{
+    display: flex;
+    margin-right: 10px;
+    color:white;
+    padding:4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button:first-child{
+    background: teal;
+}
+.button:last-child{
+    background: crimson;
+}
+
+.right{
+    overflow-y:auto;
+    
+}
+

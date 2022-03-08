@@ -1,0 +1,129 @@
+.container{
+    display: flex;
+    padding:1rem 2rem;
+}
+.left{
+    flex:2
+}
+.table{
+    width: 100%;
+    text-align: center;
+}
+
+.statusRow{
+    display: flex;
+    width:80%;
+    margin:2rem;
+    justify-content: space-between;
+}
+.status{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: inProgress 1s ease infinite alternate;
+  }
+  @keyframes inProgress {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.statusIcon{
+    position:relative;
+    width:20px;
+    height:20px;
+}
+
+.undone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.3;
+  }
+  
+  .undone .statusIcon,
+  .inProgress .statusIcon {
+    display: none;
+  }
+.right{
+    flex:1
+}
+.wrapper{
+    padding:1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    background:#222;
+    justify-content: space-between;   
+    color:white;
+    max-height:400px;
+
+}
+
+.total{
+    font-weight: bold;
+}
+
+.checkout{
+    color:teal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    padding:3px;
+    margin-top: 1rem;
+    cursor: not-allowed;
+}
+@media only screen and (max-width:480px){
+  .container{
+    flex-direction: column;
+    padding:10px;
+  }
+  .trTitle{
+    display: none;
+  }
+  .trData{
+    display: flex;
+    flex-direction: column;
+  }
+  .id,.name,.address,.total{
+    font-size: 1.2rem;
+  }
+  .id::before{
+    content:"ID : ";
+    font-weight:bold;
+  }
+  .name::before{
+    content:"Name : ";
+    font-weight:bold;
+  }
+  .address::before{
+    content:"Address : ";
+    font-weight:bold;
+  }
+  .total::before{
+    content:"Price : ";
+    font-weight:bold;
+  }
+  .statusRow{
+    flex-direction: column;
+  }
+  .done,.inProgress,.undone{
+    margin-bottom: 1.2rem;
+  }
+}

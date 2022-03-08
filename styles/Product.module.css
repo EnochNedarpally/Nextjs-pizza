@@ -1,0 +1,170 @@
+.container{
+    height:calc(100vh - 100px);
+    display: flex;
+}
+
+.left{
+    flex:1;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgContainer{
+    width:70%;
+    height:70%;
+    position:relative;
+}
+.right{
+    flex:1;
+    padding:1rem;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+   /* justify-content: flex-start;
+    align-items: center; */
+}
+.price{
+    color:#ffa154;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.choose{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.selectSize{
+    width:30%;
+    display: flex;
+    justify-content: space-between;
+}
+.size{
+    position:relative;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.size:nth-child(2){
+    width:45px;
+    height:45px;
+}
+
+.size:last-child{
+    width:60px;
+    height:60px;
+}
+
+.sizeLabel{
+    position:absolute;
+    top:-10%;
+    right:-20%;
+    font-size: 9px;
+    color:white;
+    background: teal;
+    padding:2px 4px;
+    border-radius:10px;
+}
+
+.selectIng{
+    display: flex;
+    /* width:100%; */
+    /* justify-content: space-between; */
+}
+.ingredients{
+    margin-right: 1rem;
+}
+.selectIng label{
+    font-weight: bold;
+}
+
+.amount{
+    margin:1rem 0;
+}
+.quantity{
+    width:8%;
+    padding:0 4px;
+}
+.addCart{
+    border-radius: 10px;
+    background-color: #ffa154;
+    color: white;
+    padding:4px 6px;
+    border:none;    
+    cursor: pointer;
+}
+
+@media only screen and (max-width:480px){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .left{
+        text-align: center;
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 4px;
+    }
+    .imgContainer{
+        margin-top: 1.3rem;
+        margin-bottom: 0;
+        width:60vw;
+        height:60vw;
+    }
+    .price{
+        text-align: center;
+    }
+    .selectSize{
+        width:100%;
+        padding:0 1rem;
+    }
+    .size{
+        width:55px;
+        height:55px;
+        cursor: pointer;
+    }
+    
+    .size:nth-child(2){
+        width:70px;
+        height:70px;
+    }
+    
+    .size:last-child{
+        width:85px;
+        height:85px;
+    }
+    .sizeLabel{
+        font-size: 14px;
+    }
+    .ingTitle{
+        font-size: 1.4rem;
+    }
+    .selectIng{
+        flex-direction: column;
+    }
+    .selectIng label{
+        font-size: 1.2rem;
+        margin-left: 5px;
+    }
+    .checkbok{
+        width:1.2rem;
+        height:1.2rem;
+    }
+    .quantity{
+        width:3rem;
+        height:3rem;
+        font-size: 1.3rem;
+        padding:0 10px;
+    }
+    .addCart{
+        margin-left: 1rem;
+        height:3rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}

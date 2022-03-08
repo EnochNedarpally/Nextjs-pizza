@@ -1,0 +1,36 @@
+.container{
+    padding:1.2rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.desc{
+    font-size: 20px;
+    color: #444;
+    width: 70%;
+}
+
+.wrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:480px){
+        .container{
+            padding:10px 12px;
+        }
+        .title{
+            margin:0;
+        }
+        .desc{
+            width:100%;
+            text-align: center;
+        }
+        
+}

@@ -1,0 +1,32 @@
+.container{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding:0.4rem 1rem; */
+    text-align: center;
+    cursor: pointer;
+    margin:0.6rem 0;
+}
+
+.imgContainer{
+    position:relative;
+}
+
+.title{
+    color:#ffa154;
+    font-size: 1.6rem;
+}
+
+.price{
+    color:rgb(92, 91, 91);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:480px){
+    .container{
+        width:100%
+    }
+}

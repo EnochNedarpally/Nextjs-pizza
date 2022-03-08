@@ -1,0 +1,122 @@
+.container{
+    display: flex;
+    padding:2rem;
+}
+
+.left{
+    flex:2;
+    height:100%;
+}
+
+.table{
+    width:100%;
+    border-spacing: 1.3rem;
+    text-align: center;
+}
+
+.imgContainer{
+    position:relative;
+    width:4rem;
+    height:4rem;
+}
+
+.pizzaName{
+   color: #ffa154;
+   font-weight: 500;
+}
+.right{
+    flex:1;
+}
+.wrapper{
+    padding:1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    background:#222;
+    justify-content: space-between;   
+    color:white;
+    max-height:400px;
+
+}
+
+.total{
+    font-weight: bold;
+}
+
+.checkout{
+    color:#e68739;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    padding:3px;
+    margin-top: 1rem;
+}
+
+.paymentMethod{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+.cod{
+    width:100%;
+    border-radius: 4px;
+    border: none;
+    padding:4px 7px;
+    color:teal;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+@media only screen and (max-width:480px){
+    .container{
+            flex-direction: column;
+            padding:10px;
+    }
+    .table{
+        border-spacing:1px ;
+    }
+    .trTitle{
+        display: none;
+    }
+    .trData{
+        display: flex;
+        width:100%;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgContainer{
+        width:50vw;
+        height:50vw;
+        margin:0;
+        padding: 0;
+    }
+    .pizzaName{
+       font-size: 1.3rem;
+     }
+     .extras,.price,.quantity,.total{
+         font-size: 1.2rem;
+     }
+     .extras::before{
+        content:"Extras : ";
+        font-weight: 500;
+    }
+
+     .price::before{
+         content:"Price : ";
+         font-weight: 500;
+     }
+     .quantity::before{
+        content:"Quantity : ";
+        font-weight: 500;
+    }
+    .total::before{
+        content:"Total : ";
+        font-weight: 500;
+    }
+    
+}
